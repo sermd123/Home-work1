@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+        /* это главный контийнер */
+        
+        #main-container {
+            width: 400px;
+            height: 500px;
+            background-color: #22abd7;
+            margin-top: 50px;
+            margin-left: 150px;
+            padding-top: 5px;
+            border-radius: 15px;
+        }
+        /* это голубой контейнер */
+        
+        .submain {
+            background-color: whitesmoke;
+            width: 360px;
+            height: 450px;
+            margin-left: 20px;
+            border-radius: 10px;
+        }
+        /* это белый контейнер с надписью Логин и формой */
+        
+        #logintext {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif
+        }
+        
+        .usernamefield {
+            max-width: 300px;
+            width: 300px;
+            height: 50px;
+            margin-left: 30px;
+            margin-top: 30px;
+            text-align: center;
+            background-color: rgb(248, 248, 248);
+            border: 3px solid rgb(236, 236, 236);
+            border-radius: 10px;
+        }
+        
+        input {
+            width: 300px;
+            height: 30px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        
+        #loginbutton {
+            background-color: blue;
+            border-radius: 10px;
+            margin: 35px;
+            margin-top: 50px;
+            width: 300px;
+            height: 90px;
+        }
+        
+        #f1 {
+            margin: 125px;
+            color: antiquewhite;
+            font-size: 15px;
+        }
+        
+        #f1:hover {
+            box-shadow: 0 0 10px red;
+        }
+        
+        #f2 {
+            padding-left: 85px;
+            font-size: 25px;
+        }
+        
+        #f2:hover {
+            color: rgb(102, 0, 0);
+            font-family: fantasy;
+            transition: 3s;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-container">
+        <div class="submain">
+            <p align="center">
+                <h1 id="logintext">LOGIN</h1>
+            </p>
+            <p>
+                <div class="usernamefield">
+                    <p id="username1">
+                        <input type="text" placeholder="username or e-mail" autofocus required>
+                    </p>
+                </div>
+            </p>
+            <p>
+                <div class="usernamefield">
+                    <p id="username2">
+                        <input type="text" placeholder="Password" required>
+                    </p>
+                </div>
+            </p>
+            <div id="loginbutton">
+                <a id="f1" href="">Log in</a>
+
+
+            </div>
+            <p>
+                <a id="f2" href="">Lost your password?</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
